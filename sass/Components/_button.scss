@@ -1,0 +1,20 @@
+.btn-dark {
+    @include styleText($fs-1, $color-gray-1, $fw-normal);
+    @include styleButton($color-dark-1, $color-dark-1, $pd-0 + 2, $pd-2);
+    &:hover {
+        @include styleHoverButton($color-dark-0, $color-dark-0, $color-gray-1);
+    }
+    &:focus{
+        outline: none;
+    }
+}
+.btn-blue{
+    @include styleText($fs-1,$color-white-0,$fw-normal);
+    @include styleButton($color-blue-0,$color-blue-0,$pd-0,$pd-1);
+    &:hover{
+        @include styleHoverButton($color-blue-1,$color-blue-1,$color-white-0);
+    }
+    &:focus{
+        outline: none;
+    }
+}

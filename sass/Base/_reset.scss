@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+html, body{
+    @include styleText($fs-0,$color-black-0,$fw-normal);
+}
+.mercedes-title{
+    font-family: 'Playfair Display', serif;
+}
+

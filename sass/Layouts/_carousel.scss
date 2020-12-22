@@ -1,0 +1,45 @@
+.merCarousel--content{
+    position: relative;
+    .item--background{
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .item--content{
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        padding-right: 40%;
+        a{
+            text-decoration: none;
+            h3{
+                @include styleText($fs-6, $color-white-0,$fw-normal);
+                letter-spacing: -2px;
+                margin-bottom: $mg-3 + 8;
+            }
+        }
+        
+        a{
+            border-radius: 0;
+            &:hover{
+                background-color: $color-black-0;
+            }
+        }
+    }
+}
+// responsive max-width 768px
+@include responsive('large'){
+    .merCarousel--content{
+        .item--content{
+            a{
+                h3{
+                    @include styleText($fs-5, $color-white-0,$fw-normal);
+                    padding-right: 30%;
+                }
+            }
+          
+        }
+    }
+   
+}

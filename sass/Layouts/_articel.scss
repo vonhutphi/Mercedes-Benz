@@ -1,0 +1,43 @@
+.merArticle{
+    background: $color-black-0;
+    .merSearch{
+        .form-control{
+            border: none;
+            border-radius: 0;
+            &:focus{
+                box-shadow: none;
+            }
+        }
+        .input-group-text{
+            background-color: $color-white-0;
+            border: none;
+            border-radius: 0;
+            cursor: pointer;
+        }
+    }
+    .merArticel{
+        padding-right: 40%;
+        text-align: justify;
+        h3{
+            @include styleText($fs-4,$color-white-0,$fw-normal)
+        }
+        p{
+            @include styleText($fs-0,$color-white-0,$fw-normal)
+        }
+        a:first-child{
+            @include styleText($fs-0,$color-blue-0,$fw-normal);
+            &:hover{
+                @include styleText($fs-0,$color-blue-1,$fw-normal);
+            }
+        }
+        a.btn{
+            border-radius: 0;
+            background-color: $color-blue-0;
+            &:hover{
+                background-color: $color-blue-1;
+            }
+        }
+        
+    }
+
+}

@@ -1,0 +1,25 @@
+@mixin styleText($fs,$color,$fw){
+    font-size: $fs;
+    color: $color;
+    font-weight: $fw;
+}
+@mixin styleButton($bg-color,$border,$py,$px){
+    background-color: $bg-color;
+    border: 1px solid $border;
+    padding: $py $px;
+}
+@mixin styleHoverButton($bg-hover, $border-hover,$color-hover){
+    background-color: $bg-hover;
+    border-color: $border-hover;
+    color: $color-hover;
+}
+@mixin responsive($screen){
+    @if(map-has-key($map: $breakpoints, $key: $screen)){
+        $value: map-get($map:$breakpoints, $key:$screen);
+        @media screen and (max-width: $value){
+            @content;
+        }
+    }@else{
+        @warn "Man hinh khong ton tai";
+    }
+}

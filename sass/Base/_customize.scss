@@ -1,0 +1,38 @@
+.owl-carousel {
+    .owl-nav {
+        margin: 0;
+     height: 0;
+        button.owl-prev {
+            span {
+                position: absolute;
+                top: 45%;
+                left: 2%;
+                height: 30px;
+                width: 30px;
+                font-size: 70px;
+                line-height: 10px;
+                color: $color-white-0;
+                transition: all 0.5s;
+                &:hover {
+                    color: $color-gray-0;
+                }
+            }
+        }
+        button.owl-next {
+            span {
+                position: absolute;
+                top: 45%;
+                right: 2%;
+                height: 30px;
+                width: 30px;
+                font-size: 70px;
+                line-height: 10px;
+                color: $color-white-0;
+                transition: all 0.5s;
+                &:hover {
+                    color: $color-gray-0;
+                }
+            }
+        }
+    }
+}
